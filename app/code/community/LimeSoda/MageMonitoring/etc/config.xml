@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <LimeSoda_MageMonitoring>
+            <version>1.0.0</version>
+        </LimeSoda_MageMonitoring>
+    </modules>
+
+    <default>
+        <magemonitoring>
+            <tabs>
+                <limesoda_sales>
+                    <label>Sales</label>
+                    <title>Sales</title>
+                    <display_prio>100</display_prio>
+                    <widgets>
+                        <order_statuses>
+                            <impl>LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatuses</impl>
+                            <display_prio>40</display_prio>
+                        </order_statuses>
+                    </widgets>
+                </limesoda_sales>
+            </tabs>
+        </magemonitoring>
+    </default>
+</config>
