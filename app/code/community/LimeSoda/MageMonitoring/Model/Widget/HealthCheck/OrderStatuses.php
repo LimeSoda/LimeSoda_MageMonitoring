@@ -38,7 +38,7 @@ class LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatuses
     public function getOutput()
     {
         $block = $this->newMultiBlock();
-        /** @var Hackathon_MageMonitoring_Block_Widget_Multi_Renderer_Donutchart $renderer */
+        /** @var Hackathon_MageMonitoring_Block_Widget_Multi_Renderer_Barchart $renderer */
         $renderer = $block->newContentRenderer('barchart');
 
         Varien_Profiler::start('HEALTHCHECK ORDER_STATUSES');
