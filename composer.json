@@ -1,0 +1,12 @@
+{
+    "name": "limesoda/limesoda_mage-monitoring",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "description": "Adds health checks and statistics to Hackathon_MageMonitoring.",
+    "authors":[
+        {
+            "name": "Matthias Zeis",
+            "email": "m.zeis@limesoda.com"
+        }
+    ]
+}

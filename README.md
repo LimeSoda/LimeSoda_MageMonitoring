@@ -1,6 +1,6 @@
 LimeSoda_MageMonitoring
 =====================
-Adds health checks and statistics to Hackathon_MageMonitoring
+Adds health checks and statistics to Hackathon_MageMonitoring.
 
 Facts
 -----
@@ -42,6 +42,10 @@ Shows the orders counts grouped by Order Status.
 Shows the orders counts grouped by Order Status with all orders excluded that have an order status assigned to state
 'Complete'.
 
+####Order Statuses (for orders in progress)
+
+Shows the orders counts grouped by Order Status with all orders excluded that have an order status assigned to state
+'Canceled', 'Complete' or 'Closed'.
 
 Support
 -------
@@ -55,9 +59,9 @@ Contribution
 Any contribution is highly appreciated. The best way to contribute code is to
 open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
-Developer
+Developers
 ---------
-Matthias Zeis ([matthias-zeis.com](http://www.matthias-zeis.com), [@mzeis](https://twitter.com/mzeis))
+* Matthias Zeis ([matthias-zeis.com](http://www.matthias-zeis.com), [@mzeis](https://twitter.com/mzeis))
 
 Licence
 -------
