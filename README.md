@@ -29,11 +29,18 @@ Usage
 -----
 Install the extension and navigate to the backend menu `System > Monitoring`.
 
+The following reports have been added.
+
 ###Sales
 
 ####Order Statuses
 
 Shows the orders counts grouped by Order Status.
+
+####Order Statuses (excluded orders with Complete statuses)
+
+Shows the orders counts grouped by Order Status with all orders excluded that have an order status assigned to state
+'Complete'.
 
 
 Support
