@@ -22,6 +22,10 @@
                             <impl>LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesIncomplete</impl>
                             <display_prio>50</display_prio>
                         </order_statuses_incomplete>
+                        <order_statuses_in_progress>
+                            <impl>LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesInProgress</impl>
+                            <display_prio>60</display_prio>
+                        </order_statuses_in_progress>
                     </widgets>
                 </limesoda_sales>
             </tabs>
