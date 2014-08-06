@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Displays the order counts group by Order Status.
+ */
 class LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatuses
     extends Hackathon_MageMonitoring_Model_Widget_Abstract
     implements Hackathon_MageMonitoring_Model_Widget
