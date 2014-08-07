@@ -29,9 +29,13 @@ Usage
 -----
 Install the extension and navigate to the backend menu `System > Monitoring`.
 
-The following reports have been added.
+The following checks and statistics have been added:
 
 ###Sales
+
+####Sales Check
+
+* Orders with incorrect state / status combination.
 
 ####Order Statuses
 

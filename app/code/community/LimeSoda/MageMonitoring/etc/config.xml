@@ -14,6 +14,10 @@
                     <title>Sales</title>
                     <display_prio>100</display_prio>
                     <widgets>
+                        <sales_check>
+                            <impl>LimeSoda_MageMonitoring_Model_Widget_Sales_Check</impl>
+                            <display_prio>10</display_prio>
+                        </sales_check>
                         <order_statuses>
                             <impl>LimeSoda_MageMonitoring_Model_Widget_Sales_OrderStatuses</impl>
                             <display_prio>40</display_prio>
