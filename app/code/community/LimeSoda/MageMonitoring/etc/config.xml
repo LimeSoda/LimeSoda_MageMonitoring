@@ -15,15 +15,15 @@
                     <display_prio>100</display_prio>
                     <widgets>
                         <order_statuses>
-                            <impl>LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatuses</impl>
+                            <impl>LimeSoda_MageMonitoring_Model_Widget_Sales_OrderStatuses</impl>
                             <display_prio>40</display_prio>
                         </order_statuses>
                         <order_statuses_incomplete>
-                            <impl>LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesIncomplete</impl>
+                            <impl>LimeSoda_MageMonitoring_Model_Widget_Sales_OrderStatusesIncomplete</impl>
                             <display_prio>50</display_prio>
                         </order_statuses_incomplete>
                         <order_statuses_in_progress>
-                            <impl>LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesInProgress</impl>
+                            <impl>LimeSoda_MageMonitoring_Model_Widget_Sales_OrderStatusesInProgress</impl>
                             <display_prio>60</display_prio>
                         </order_statuses_in_progress>
                     </widgets>

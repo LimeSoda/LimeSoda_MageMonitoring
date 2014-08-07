@@ -1,10 +1,9 @@
 <?php
 
 /**
- * Displays the order counts group by Order Status (excluding orders with statuses belonging to state Canceled,
- * Complete or Closed).
+ * Displays the order counts group by Order Status (excluding orders with a complete state).
  */
-class LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesInProgress
+class LimeSoda_MageMonitoring_Model_Widget_Sales_OrderStatusesIncomplete
     extends Hackathon_MageMonitoring_Model_Widget_Abstract
     implements Hackathon_MageMonitoring_Model_Widget
 {
@@ -15,7 +14,7 @@ class LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesInProgress
      */
     public function getName()
     {
-        return 'Order Statuses for orders in progress';
+        return 'Order Statuses (excluding orders with Complete statuses)';
     }
 
     /**
@@ -44,19 +43,14 @@ class LimeSoda_MageMonitoring_Model_Widget_HealthCheck_OrderStatusesInProgress
 
         Varien_Profiler::start('HEALTHCHECK ORDER_STATUSES');
 
-        $states = array(
-            Mage_Sales_Model_Order::STATE_CANCELED,
-            Mage_Sales_Model_Order::STATE_COMPLETE,
-            Mage_Sales_Model_Order::STATE_CLOSED
-        );
-        $statuses = array_keys(Mage::getModel('sales/order_config')->getStateStatuses($states));
+        $completeStatuses = array_keys(Mage::getModel('sales/order_config')->getStateStatuses(Mage_Sales_Model_Order::STATE_COMPLETE));
 
         $resourceModel = Mage::getResourceModel('sales/order');
         $connection = $resourceModel->getReadConnection();
         $sql = $connection
             ->select()
             ->from(array('sfo' => $resourceModel->getTable('sales/order')), array('status', 'count' => 'count(*)'))
-            ->where('status NOT IN (?)', $statuses)
+            ->where('status NOT IN (?)', $completeStatuses)
             ->group('sfo.status');
 
         $items = $connection->fetchAll($sql);
