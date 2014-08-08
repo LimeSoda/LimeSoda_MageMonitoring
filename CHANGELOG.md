@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.1.1 (08.08.2014)
+-----
+* Added dependencies in composer.json.
+
 1.1.0 (07.08.2014)
 -----
 * Moved order status reports so 'Sales' pseudo-namespace.

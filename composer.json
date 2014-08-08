@@ -8,5 +8,15 @@
             "name": "Matthias Zeis",
             "email": "m.zeis@limesoda.com"
         }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "magento-hackathon/hackathon_magemonitoring": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
     ]
 }

@@ -4,7 +4,7 @@ Adds health checks and statistics to Hackathon_MageMonitoring.
 
 Facts
 -----
-- version: 1.1.0
+- version: 1.1.1
 - [extension on GitHub](https://github.com/LimeSoda/LimeSoda_MageMonitoring)
 
 Compatibility
